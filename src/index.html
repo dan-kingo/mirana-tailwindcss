@@ -12,6 +12,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="bg-slate-800">
     <nav
@@ -111,6 +112,8 @@
     <section
       class="relative h-screen bg-custom-pattern bg-cover bg-center bg-fixed px-4 md:px-16"
       id="hero"
+      data-aos="fade-down"
+      data-aos-duration="1000"
     >
       <div class="absolute inset-0 bg-slate-900 opacity-70"></div>
       <div
@@ -146,10 +149,10 @@
       id="about"
       class="px-4 md:px-16 flex items-start my-32 gap-12 flex-col-reverse lg:flex-row"
     >
-      <div class="basis-1/2">
+      <div class="basis-1/2" data-aos="fade-down" data-aos-duration="2000">
         <img src="../images/PT-Hero-1200x675.webp" alt="" class="rounded" />
       </div>
-      <div class="basis-1/2">
+      <div class="basis-1/2" data-aos="fade-down" data-aos-duration="3000">
         <h1 class="text-4xl md:text-6xl text-white mb-6">About Us</h1>
         <p class="text-slate-300 leading-loose text-justify">
           Founded by Mirana, a passionate and certified gym trainer, our gym is
@@ -173,7 +176,7 @@
         Our Services
       </h1>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-16 mt-8">
-        <div class="">
+        <div class="" data-aos="fade-down" data-aos-duration="1000">
           <img
             src="../images/build.jpg"
             alt=""
@@ -186,7 +189,7 @@
           </p>
         </div>
 
-        <div class="">
+        <div class="" data-aos="fade-down" data-aos-duration="1500">
           <img
             src="../images/loss.jpg "
             alt=""
@@ -198,7 +201,7 @@
             expert guidance for optimal results.
           </p>
         </div>
-        <div class="">
+        <div class="" data-aos="fade-down" data-aos-duration="2000">
           <img
             src="../images/istockphoto-453614801-612x612.jpg "
             alt=""
@@ -211,7 +214,7 @@
           </p>
         </div>
 
-        <div class="">
+        <div class="" data-aos="fade-down" data-aos-duration="2500">
           <img
             src="../images/sauna.webp"
             alt=""
@@ -223,7 +226,7 @@
             services at Mirana's Gym.
           </p>
         </div>
-        <div class="">
+        <div class="" data-aos="fade-down" data-aos-duration="3000">
           <img
             src="../images/massage.jpg"
             alt=""
@@ -237,7 +240,7 @@
             alleviate stress and enhance overall wellness.
           </p>
         </div>
-        <div class="">
+        <div class="" data-aos="fade-down" data-aos-duration="2000">
           <img
             src="../images/mental.jpg"
             alt=""
@@ -261,7 +264,11 @@
         Our Pricing
       </h1>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 mb-12 gap-8">
-        <div class="bg-white rounded py-2 px-4">
+        <div
+          class="bg-white rounded py-2 px-4"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+        >
           <img
             src="../images/Animation - 1717333895404.gif"
             alt=""
@@ -329,7 +336,11 @@
             Join Now
           </button>
         </div>
-        <div class="bg-white rounded py-2 px-4">
+        <div
+          class="bg-white rounded py-2 px-4"
+          data-aos="fade-down"
+          data-aos-duration="2000"
+        >
           <img
             src="../images/Animation - 1717333895404.gif"
             alt=""
@@ -395,7 +406,11 @@
             Join Now
           </button>
         </div>
-        <div class="bg-white rounded py-2 px-4">
+        <div
+          class="bg-white rounded py-2 px-4"
+          data-aos="fade-down"
+          data-aos-duration="2500"
+        >
           <img
             src="../images/Animation - 1717333895404.gif"
             alt=""
@@ -469,7 +484,11 @@
       <h1 class="text-center text-4xl md:text-6xl text-white mt-8 mb-24">
         Our Schedule
       </h1>
-      <div class="overflow-x-auto rounded">
+      <div
+        class="overflow-x-auto rounded"
+        data-aos="fade-down"
+        data-aos-duration="2000"
+      >
         <table class="table-auto min-w-full divide-y divide-gray-200">
           <thead>
             <tr>
@@ -573,7 +592,11 @@
       <h1 class="text-center text-4xl md:text-6xl text-white mt-8 mb-24">
         Contact Us
       </h1>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 rounded p-4">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 gap-24 rounded p-4"
+        data-aos="fade-down"
+        data-aos-duration="2000"
+      >
         <div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19673.632883353675!2d37.687191044324024!3d11.922953842872454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x16449ed2085881fb%3A0x1ec4c7a195e505ac!2sSt%20Gebriel!5e0!3m2!1sen!2set!4v1717337204712!5m2!1sen!2set"
@@ -586,7 +609,7 @@
             class="rounded shadow-neutral-900 w-80 h-80 md:w-full md:h-full"
           ></iframe>
         </div>
-        <div>
+        <div data-aos="fade-down" data-aos-duration="2000">
           <form method="POST" id="form" class="flex flex-col gap-8">
             <input
               type="hidden"
@@ -717,6 +740,11 @@
     </section>
 
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
   </body>
 </html>

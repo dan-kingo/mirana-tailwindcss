@@ -743,6 +743,10 @@ video {
   height: 100%;
 }
 
+.h-0{
+  height: 0px;
+}
+
 .w-48{
   width: 12rem;
 }
@@ -1486,6 +1490,10 @@ html {
 
   .lg\:hidden{
     display: none;
+  }
+
+  .lg\:h-0{
+    height: 0px;
   }
 
   .lg\:grid-cols-3{
