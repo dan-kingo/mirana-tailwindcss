@@ -38,7 +38,14 @@
           >
         </li>
         <li>
-          <a href="#" class="hover:text-pink-700 transition-all">Tranier</a>
+          <a href="#schedule" class="hover:text-pink-700 transition-all"
+            >Schedule</a
+          >
+        </li>
+        <li>
+          <a href="#contact" class="hover:text-pink-700 transition-all"
+            >Contact</a
+          >
         </li>
       </ul>
       <div class="hidden lg:block">
@@ -468,7 +475,6 @@
               <td class="px-6 py-4 whitespace-nowrap" colspan="3">
                 Circuit Training
               </td>
-              >
             </tr>
             <tr>
               <td class="px-6 py-4 whitespace-nowrap font-bold">Wednesday</td>
@@ -514,5 +520,67 @@
         </table>
       </div>
     </section>
+
+    <!-- contact section -->
+
+    <section id="contact" class="px-4 md:px-16 my-24">
+      <h1 class="text-center text-4xl md:text-6xl text-white mt-8 mb-24">
+        Contact Us
+      </h1>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 rounded p-4">
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19673.632883353675!2d37.687191044324024!3d11.922953842872454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x16449ed2085881fb%3A0x1ec4c7a195e505ac!2sSt%20Gebriel!5e0!3m2!1sen!2set!4v1717337204712!5m2!1sen!2set"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="rounded shadow-neutral-900 w-80 h-80 md:w-full md:h-full"
+          ></iframe>
+        </div>
+        <div>
+          <form method="POST" id="form" class="flex flex-col gap-8">
+            <input
+              type="hidden"
+              name="access_key"
+              value="1aab92dc-a0b9-4043-a390-b72203d93691"
+            />
+
+            <input
+              type="text"
+              name="name"
+              placeholder="your name"
+              required
+              class="bg-slate-700 rounded py-4 px-2 text-slate-300 outline-none"
+            />
+            <input
+              type="email"
+              name="email"
+              required
+              class="bg-slate-700 rounded py-4 px-2 text-slate-300 outline-none"
+              placeholder="your email"
+            />
+            <textarea
+              name="message"
+              rows="6"
+              placeholder="your message"
+              required
+              class="bg-slate-700 rounded py-4 px-2 text-slate-300 outline-none resize-none"
+            ></textarea>
+            <button
+              type="submit"
+              class="py-4 px-6 text-white rounded-full bg-gradient-to-r from-purple-600 to-pink-600 hover:opacity-90 transition-all z-20 w-48 md:w-64"
+            >
+              Submit Form
+            </button>
+          </form>
+          <div id="result"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
   </body>
 </html>
