@@ -42,5 +42,25 @@ form.addEventListener("submit", function (e) {
     });
 });
 
+const menuButton = document.getElementById("menuButton");
+const closeButton = document.getElementById("closeButton");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuButton.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
+
+closeButton.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
+
+// Close menu on link click
+const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+mobileMenuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.add("hidden");
+  });
+});
+
 let year = new Date().getFullYear();
 document.getElementById("year").innerHTML = year;

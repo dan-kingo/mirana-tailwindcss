@@ -590,6 +590,10 @@ video {
   }
 }
 
+.fixed{
+  position: fixed;
+}
+
 .absolute{
   position: absolute;
 }
@@ -610,12 +614,24 @@ video {
   top: 0px;
 }
 
+.right-\[300px\]{
+  right: 300px;
+}
+
+.left-0{
+  left: 0px;
+}
+
 .z-20{
   z-index: 20;
 }
 
 .z-50{
   z-index: 50;
+}
+
+.z-40{
+  z-index: 40;
 }
 
 .m-2{
@@ -719,6 +735,14 @@ video {
   height: 20rem;
 }
 
+.h-\[100\%\]{
+  height: 100%;
+}
+
+.h-full{
+  height: 100%;
+}
+
 .w-48{
   width: 12rem;
 }
@@ -751,6 +775,14 @@ video {
   width: 66.666667%;
 }
 
+.w-\[300px\]{
+  width: 300px;
+}
+
+.w-64{
+  width: 16rem;
+}
+
 .min-w-full{
   min-width: 100%;
 }
@@ -773,6 +805,15 @@ video {
 
 .table-auto{
   table-layout: auto;
+}
+
+.-translate-x-full{
+  --tw-translate-x: -100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer{
@@ -801,6 +842,10 @@ video {
 
 .items-start{
   align-items: flex-start;
+}
+
+.items-end{
+  align-items: flex-end;
 }
 
 .items-center{
@@ -843,6 +888,10 @@ video {
   gap: 1.5rem;
 }
 
+.gap-11{
+  gap: 2.75rem;
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -876,6 +925,10 @@ video {
 .divide-gray-200 > :not([hidden]) ~ :not([hidden]){
   --tw-divide-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-divide-opacity));
+}
+
+.self-end{
+  align-self: flex-end;
 }
 
 .overflow-x-auto{
@@ -967,6 +1020,11 @@ video {
 .bg-gray-700{
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#121321\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 19 33 / var(--tw-bg-opacity));
 }
 
 .bg-custom-pattern{
@@ -1252,6 +1310,12 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-transform{
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 html {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
@@ -1434,6 +1498,14 @@ html {
 
   .lg\:flex-row{
     flex-direction: row;
+  }
+
+  .lg\:items-center{
+    align-items: center;
+  }
+
+  .lg\:gap-12{
+    gap: 3rem;
   }
 
   .lg\:px-16{
