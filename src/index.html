@@ -7,7 +7,7 @@
   </head>
   <body class="bg-slate-800">
     <nav
-      class="bg-slate-900 py-2 px-4 md:px-16 text-slate-50 flex items-center justify-between sticky top-0"
+      class="bg-slate-900 py-2 px-4 md:px-16 text-slate-50 flex items-center justify-between sticky top-0 z-50"
     >
       <a
         href="#"
@@ -85,23 +85,113 @@
 
     <section
       id="about"
-      class="px-4 md:px-16 flex items-start mt-24 mb-12 gap-12 flex-col-reverse md:flex-row"
+      class="px-4 md:px-16 flex items-start my-32 gap-12 flex-col-reverse lg:flex-row"
     >
       <div class="basis-1/2">
         <img src="../images/PT-Hero-1200x675.webp" alt="" class="rounded" />
       </div>
       <div class="basis-1/2">
-        <h1 class="text-4xl md:text-6xl text-white mb-8">About Us</h1>
-        <p class="text-slate-300 leading-loose">
+        <h1 class="text-4xl md:text-6xl text-white mb-6">About Us</h1>
+        <p class="text-slate-300 leading-loose text-justify">
           Founded by Mirana, a passionate and certified gym trainer, our gym is
           dedicated to providing personalized fitness training and a welcoming
-          community for everyone, regardless of fitness level.
+          community for everyone. We believe that fitness is not just about
+          lifting weights it's about finding balance, building strength, and
+          nurturing both body and mind.
         </p>
         <button
-          class="py-4 px-6 text-white rounded-full bg-gradient-to-r from-purple-600 to-pink-600 hover:opacity-90 transition-all z-20 w-48 md:w-64 mt-8"
+          class="py-4 px-6 text-white rounded-full bg-gradient-to-r from-purple-600 to-pink-600 hover:opacity-90 transition-all z-20 w-48 md:w-64 mt-4"
         >
           Join Now
         </button>
+      </div>
+    </section>
+
+    <!-- services section -->
+
+    <section id="services" class="px-4 md:px-16 my-24">
+      <h1 class="text-center text-4xl md:text-6xl text-white mt-8 mb-24">
+        Our Services
+      </h1>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-16 mt-8">
+        <div class="">
+          <img
+            src="../images/build.jpg"
+            alt=""
+            class="shadow-lg w-full object-center rounded-xl cursor-pointer hover:scale-95 transition-all h-64"
+          />
+          <h1 class="my-2 text-white text-2xl md:text-3xl p-2">Muscle Gain</h1>
+          <p class="text-slate-300 px-2 pb-4 py-2 lg:text-justify">
+            Our gym offers tailored strength training programs designed to help
+            you effectively build muscle and increase strength.
+          </p>
+        </div>
+
+        <div class="">
+          <img
+            src="../images/loss.jpg "
+            alt=""
+            class="shadow-lg w-full object-center rounded-xl cursor-pointer hover:scale-95 transition-all h-64"
+          />
+          <h1 class="my-2 text-white text-2xl md:text-3xl p-2">Weight Loss</h1>
+          <p class="text-slate-300 px-2 pb-4 py-2 lg:text-justify">
+            we offer weight loss programs combining exercise, nutrition, and
+            expert guidance for optimal results.
+          </p>
+        </div>
+        <div class="">
+          <img
+            src="../images/istockphoto-453614801-612x612.jpg "
+            alt=""
+            class="shadow-lg w-full object-center rounded-xl cursor-pointer hover:scale-95 transition-all h-64"
+          />
+          <h1 class="my-2 text-white text-2xl md:text-3xl p-2">Aerobics</h1>
+          <p class="text-slate-300 px-2 pb-4 py-2 lg:text-justify">
+            Our gym offers dynamic aerobics classes designed to improve
+            cardiovascular health and overall fitness.
+          </p>
+        </div>
+
+        <div class="">
+          <img
+            src="../images/sauna.webp"
+            alt=""
+            class="shadow-lg w-full object-center rounded-xl cursor-pointer hover:scale-95 transition-all h-64"
+          />
+          <h1 class="my-2 text-white text-2xl md:text-3xl p-2">Steam Rooms</h1>
+          <p class="text-slate-300 px-2 pb-4 py-2 lg:text-justify">
+            Experience ultimate relaxation with our state-of-the-art steam room
+            services at Mirana's Gym.
+          </p>
+        </div>
+        <div class="">
+          <img
+            src="../images/massage.jpg"
+            alt=""
+            class="shadow-lg w-full object-center rounded-xl cursor-pointer hover:scale-95 transition-all h-64"
+          />
+          <h1 class="my-2 text-white text-2xl md:text-3xl p-2">
+            Massage Therapy
+          </h1>
+          <p class="text-slate-300 px-2 pb-4 py-2 lg:text-justify">
+            Indulge in our rejuvenating massage therapy services, tailored to
+            alleviate stress and enhance overall wellness.
+          </p>
+        </div>
+        <div class="">
+          <img
+            src="../images/mental.jpg"
+            alt=""
+            class="shadow-lg w-full object-center rounded-xl cursor-pointer hover:scale-95 transition-all h-64"
+          />
+          <h1 class="my-2 text-white text-2xl md:text-3xl p-2">
+            Mental Therapy
+          </h1>
+          <p class="text-slate-300 px-2 pb-4 py-2 lg:text-justify">
+            Unlock your full potential with our mental therapy services,
+            designed to promote holistic well-being.
+          </p>
+        </div>
       </div>
     </section>
   </body>
