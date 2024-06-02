@@ -7,7 +7,7 @@
   </head>
   <body class="bg-slate-800">
     <nav
-      class="bg-slate-900 py-2 px-12 text-slate-50 flex items-center justify-between"
+      class="bg-slate-900 py-2 px-4 md:px-16 text-slate-50 flex items-center justify-between sticky top-0"
     >
       <a
         href="#"
@@ -35,12 +35,46 @@
         <button
           class="py-2 px-6 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 hover:opacity-90 transition-all"
         >
-          Start Now
+          Join Now
         </button>
       </div>
       <div class="block lg:hidden text-3xl hover:text-pink-700 transition-all">
         <button>&#9776;</button>
       </div>
     </nav>
+
+    <!-- hero section -->
+
+    <section
+      class="relative h-screen bg-custom-pattern bg-cover bg-center bg-fixed px-4 md:px-16"
+      id="hero"
+    >
+      <div class="absolute inset-0 bg-slate-900 opacity-70"></div>
+      <div
+        class="flex items-center justify-center flex-col h-screen gap-12 md:items-start"
+      >
+        <h1
+          class="z-20 text-4xl md:text-7xl text-white md:max-w-2xl max-w-full"
+        >
+          Mirana
+          <span
+            class="text-4xl md:text-7xl text-transparent bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text"
+          >
+            a GYM TRAINER.</span
+          >
+        </h1>
+        <h1
+          class="text-4xl md:text-6xl text-white z-20 max-w-full md:max-w-2xl"
+        >
+          Transform Your Body Today!
+        </h1>
+
+        <button
+          class="py-4 px-6 text-white rounded-full bg-gradient-to-r from-purple-600 to-pink-600 hover:opacity-90 transition-all z-20 w-48 md:w-64"
+        >
+          Join Now
+        </button>
+      </div>
+    </section>
   </body>
 </html>
