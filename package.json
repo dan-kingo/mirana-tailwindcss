@@ -96,8 +96,9 @@
     "yaml": "^2.4.2"
   },
   "scripts": {
-    "build": "npm run build:css",
-    "build:css": "npx tailwindcss -i ./src/input.css -o ./dist/styles.css --minify",
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch",
+    "prettier": "npx prettier --write ./build/*.html",
+    "build": "npm run tailwind",
     "start": "npm run build && npx serve dist"
   },
   "keywords": [],
