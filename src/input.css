@@ -16,3 +16,13 @@ html {
   background-color: #dbe4ff;
   cursor: pointer;
 }
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+.mobile-menu-enter {
+  transform: translateX(-100%);
+}
+.mobile-menu-enter-active {
+  transform: translateX(0);
+}

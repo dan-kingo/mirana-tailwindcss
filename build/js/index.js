@@ -43,24 +43,25 @@ form.addEventListener("submit", function (e) {
 });
 
 const menuButton = document.getElementById("menuButton");
-const closeButton = document.getElementById("closeButton");
+const menuIcon = document.getElementById("menuIcon");
 const mobileMenu = document.getElementById("mobileMenu");
 
 menuButton.addEventListener("click", () => {
-  mobileMenu.classList.toggle("hidden");
-});
-
-closeButton.addEventListener("click", () => {
-  mobileMenu.classList.toggle("hidden");
+  mobileMenu.classList.toggle("-translate-x-full");
+  if (mobileMenu.classList.contains("-translate-x-full")) {
+    menuIcon.classList.replace("bx-x", "bx-menu-alt-right");
+  } else {
+    menuIcon.classList.replace("bx-menu-alt-right", "bx-x");
+  }
 });
 
 // Close menu on link click
 const mobileMenuLinks = mobileMenu.querySelectorAll("a");
 mobileMenuLinks.forEach((link) => {
   link.addEventListener("click", () => {
-    mobileMenu.classList.add("hidden");
+    mobileMenu.classList.add("-translate-x-full");
+    menuIcon.classList.replace("bx-x", "bx-menu-alt-right");
   });
 });
-
 let year = new Date().getFullYear();
 document.getElementById("year").innerHTML = year;

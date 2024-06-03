@@ -723,6 +723,10 @@ video {
   height: 16rem;
 }
 
+.h-80{
+  height: 20rem;
+}
+
 .h-screen{
   height: 100vh;
 }
@@ -733,6 +737,10 @@ video {
 
 .w-48{
   width: 12rem;
+}
+
+.w-80{
+  width: 20rem;
 }
 
 .w-full{
@@ -753,6 +761,15 @@ video {
 
 .table-auto{
   table-layout: auto;
+}
+
+.-translate-x-full{
+  --tw-translate-x: -100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer{
@@ -1161,6 +1178,12 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-transform{
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 html {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
@@ -1173,6 +1196,18 @@ html {
 .table-auto tbody tr:hover {
   background-color: #dbe4ff;
   cursor: pointer;
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+.mobile-menu-enter {
+  transform: translateX(-100%);
+}
+
+.mobile-menu-enter-active {
+  transform: translateX(0);
 }
 
 .hover\:scale-105:hover{
@@ -1249,6 +1284,10 @@ html {
     margin-bottom: 0px;
   }
 
+  .md\:h-\[450px\]{
+    height: 450px;
+  }
+
   .md\:w-40{
     width: 10rem;
   }
@@ -1259,6 +1298,10 @@ html {
 
   .md\:w-96{
     width: 24rem;
+  }
+
+  .md\:w-\[650px\]{
+    width: 650px;
   }
 
   .md\:max-w-2xl{
